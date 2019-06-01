@@ -12,7 +12,7 @@
       <img src="img/logo.svg" width="163" height="35" alt="Логотип компании DEVICE">
     </a>
     <form class="header-search" method="get" action="#">
-      <input type="search" name="search" placeholder="Поиск по сайту">
+      <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
       <button class="search-btn" type="submit" name="find"> </button>
     </form>
     <nav class="user-menu">
@@ -23,11 +23,23 @@
     </nav>
     <nav class="main-nav">
       <ul>
-        <li><a href="#">Каталог товаров</a></li>
+        <li><button href="#">Каталог товаров</button></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <section class="modal modal-catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul>
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a>Моноподы для селфи</a></li>
+          <li><a href="#">Экшен-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+        <span class="modal-close">x</span>
+      </section>
     </nav>
   </header>
 
@@ -39,9 +51,54 @@
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
     <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
-      <a href="#">Показать</a>
+      <h2>Фильтр:</h2>
+      <form class="filter" method="get" action="#">
+        <fieldset>
+          <legend>Стоимость</legend>
+
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <label><input type="checkbox" name="black" checked>
+                Черный</label>
+            </li>
+            <li class="filter-option">
+              <label><input type="checkbox" name="white">
+                Белый</label>
+            </li>
+            <li class="filter-option">
+              <label><input type="checkbox" name="blue" checked>
+                Синий</label>
+            </li>
+            <li class="filter-option">
+              <label><input type="checkbox" name="red" checked>
+                Красный</label>
+            </li>
+            <li class="filter-option">
+              <label><input type="checkbox" name="pink">
+                Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter-option">
+              <label><input type="radio" name="bluetooth-include" value="yes" checked>
+                Есть</label>
+            </li>
+            <li class="filter-option">
+              <label><input type="radio" name="bluetooth-include" value="no">
+                Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">
+          Показать
+        </button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -137,10 +194,6 @@
     </div>
     <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </footer>
-  <section class="modal modal-catalog">
-    <h2 class="visually-hidden">Каталог товаров</h2>
-    <span class="modal-close">x</span>
-  </section>
 </body>
 
 </html>

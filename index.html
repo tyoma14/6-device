@@ -12,7 +12,7 @@
       <img src="img/logo.svg" width="163" height="35" alt="Логотип компании DEVICE">
     </a>
     <form class="header-search" method="get" action="#">
-      <input type="search" name="search" placeholder="Поиск по сайту">
+      <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
       <button class="search-btn" type="submit" name="find"> </button>
     </form>
     <nav class="user-menu">
@@ -22,11 +22,23 @@
     </nav>
     <nav class="main-nav">
       <ul>
-        <li><a href="#">Каталог товаров</a></li>
+        <li><button href="#">Каталог товаров</button></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <section class="modal modal-catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul>
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="catalog.html">Моноподы для селфи</a></li>
+          <li><a href="#">Экшен-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+        <span class="modal-close">x</span>
+      </section>
     </nav>
   </header>
 
@@ -56,6 +68,33 @@
       </p>
       <a href="https://www.google.com/maps/"><img src="img/map.jpg" width="560" height="222"
           alt="Расположение магазина на карте"></a>
+      <button class="modal-close">
+        Закрыть
+      </button>
+      <form class="contactform" action="#" method="post">
+        <p>
+          <label>Ваше имя:
+            <input type="text" name="user-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>Ваш e-mail:
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <textarea rows="10" cols="45" name="message" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+
+        <button class="button" type="submit">
+          Отправить
+        </button>
+      </form>
+      <button class="modal-close">
+        Закрыть
+      </button>
       <a href="write-us.html">Напишите нам</a>
     </section>
   </main>
