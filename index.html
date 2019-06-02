@@ -12,7 +12,8 @@
       <img src="img/logo.svg" width="163" height="35" alt="Логотип компании DEVICE">
     </a>
     <form class="header-search" method="get" action="#">
-      <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
       <button class="search-btn" type="submit" name="find"> </button>
     </form>
     <nav class="user-menu">
@@ -22,7 +23,7 @@
     </nav>
     <nav class="main-nav">
       <ul>
-        <li><button href="#">Каталог товаров</button></li>
+        <li><a href="#">Каталог товаров</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -71,7 +72,7 @@
       <button class="modal-close">
         Закрыть
       </button>
-      <form class="contactform" action="#" method="post">
+      <form class="contact-form" action="#" method="post">
         <p>
           <label>Ваше имя:
             <input type="text" name="user-name" placeholder="Имя Фамилия">
