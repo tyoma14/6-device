@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: local('Gilroy-ExtraBold'),
+    url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: local('Gilroy-Light'),
+    url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+    url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'),
+    url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #464646;
+
+  background-color: #ffffff;
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #f7e296;
+}
+
+.header-logo:hover .logo {
+  fill-rule: evenodd;
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.header-logo:active .logo {
+  fill-rule: evenodd;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.header-search input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search input:focus::placeholder {
+  color: rgba(0, 0, 0);
+}
+
+.main-nav-list {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2ex;
+}
+
+.main-nav-list,
+.modal-catalog-list {
+  list-style: none;
+}
+
+.main-nav-list a,
+.modal-catalog-list a,
+.user-menu a,
+.about-us a,
+.contacts a {
+  color: #000000;
+}
+
+.main-nav-list a:hover,
+.modal-catalog-list a:hover,
+.user-menu a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav-list a:active,
+.modal-catalog-list a:active,
+.user-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-index h2,
+.main-catalog h1 {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.1ex;
+}
+
+.expidition-list {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.about-us a,
+.contacts a,
+.button {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.2ex;
+}
+
+.footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer-logo {
+  fill-rule: evenodd;
+  fill: #ffc600;
+}
+
+.footer-logo:hover .logo {
+  fill-rule: evenodd;
+  fill: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo:active .logo {
+  fill-rule: evenodd;
+  fill: rgba(255, 198, 0, 0.3);
+}
+
+.footer-nav-list {
+  list-style: none;
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2ex;
+}
+
+.footer-nav-list a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-nav-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+a.footer-login,
+a.footer-compare,
+a.footer-basket,
+a.footer-username {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-login:hover,
+.footer-compare:hover,
+.footer-basket:hover,
+.footer-username:hover {
+  color: rgba(255, 255, 255);
+}
+
+.footer-login:active,
+.footer-compare:active,
+.footer-basket:active,
+.footer-username:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid #f7e296;
+  outline: none;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: #464646;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder .contact-form input:hover::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.contact-form--invalid {
+  color: rgba(70, 70, 70, 0.4);
+  background-color: #f6dada;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.main-catalog h2 {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2ex;
+}
+
+.filter legend,
+.catalog-title {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1ex;
+}
+
+.catalog-item {
+  list-style: none;
+}
+
+a .catalog-title {
+  color: #000000;
+}
