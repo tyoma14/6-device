@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Алексей Кулабухов](https://up.htmlacademy.ru/htmlcss/25/user/622685).
-* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
+* Студент: [Артём Желтышев](https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D1%91%D0%BC-%D0%B6%D0%B5%D0%BB%D1%82%D1%8B%D1%88%D0%B5%D0%B2-050b26179/).
+* Наставник: [Самоучка](https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D1%91%D0%BC-%D0%B6%D0%B5%D0%BB%D1%82%D1%8B%D1%88%D0%B5%D0%B2-050b26179/).
 
 ---
 
